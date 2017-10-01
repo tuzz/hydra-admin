@@ -1,7 +1,5 @@
 module Hydra
   class Admin < Sinatra::Base
-    get "/" do
-      "Hello, world!"
-    end
+    get("/healthcheck") { HealthcheckController.get(params, self) }
   end
 end
