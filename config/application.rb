@@ -2,10 +2,6 @@ require "bundler/setup"
 
 Bundler.require
 
-module Hydra
-  class Admin < Sinatra::Base
-    get "/" do
-      "Hello, world!"
-    end
-  end
-end
+$LOAD_PATH << File.expand_path("..", __dir__)
+
+require "config/routes"
