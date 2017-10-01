@@ -1,0 +1,14 @@
+development:
+  https: false
+  host: localhost
+  port: 3000
+
+test:
+  https: true
+  host: example.com
+  port: 1234
+
+production:
+  https: true
+  host: example.com
+  port: 1234
