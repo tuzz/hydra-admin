@@ -15,6 +15,7 @@ module API
     end
 
     def url
+      return ENV["BACKEND"] if ENV["BACKEND"]
       "http#{"s" if https?}://#{host}:#{port}"
     end
 
